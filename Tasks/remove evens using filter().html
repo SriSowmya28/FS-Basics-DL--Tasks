@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Even Numbers</title>
+</head>
+<body>
+    <script>
+        function remEven(arr) {
+            return arr.filter(num => num % 2 !== 0);
+        }
+        let numbers = [10, 15, 20, 25, 30, 35];
+        let result = remEven(numbers);
+        console.log(result);
+    </script>
+</body>
+</html>

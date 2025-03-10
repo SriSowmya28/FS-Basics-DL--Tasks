@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Console Test</title>
+</head>
+<body>
+    <script>
+      function isPalindrome(num) {
+    let originalNum = num;
+    let rem, reverseNum = 0;
+
+    while (num > 0) {
+        rem = num % 10;  // Get last digit
+        reverseNum = (reverseNum * 10) + rem; // Build reversed number
+        num = Math.floor(num / 10); // Removess last digit
+    }
+    return reverseNum === originalNum;
+} if (reverseNum === originalNum) {
+        console.log('Palindrome!');
+    } else {
+        console.log('NOT a Palindrome.');
+    }
+
+
+
+
+    </script>
+</body>
+</html>
